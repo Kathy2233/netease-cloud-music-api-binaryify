@@ -3,7 +3,11 @@
   "builds": [
     {
       "src": "./index.js",
-      "use": "@vercel/node@2.5.10"
+      "use": "@vercel/node@2.5.10",
+      "config": {
+        "installCommand": "npm install -g yarn@1.22.19 && yarn install",
+        "buildCommand": "yarn build"
+      }
     }
   ],
   "routes": [
@@ -11,5 +15,9 @@
       "src": "/(.*)",
       "dest": "/"
     }
-  ]
+  ],
+  "engines": {
+    "node": "18.x",
+    "yarn": "1.22.x"
+  }
 }
