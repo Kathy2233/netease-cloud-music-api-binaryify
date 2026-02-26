@@ -26,7 +26,6 @@ $ npm install
 ```
 
 ## 运行
-调用前务必阅读文档的`调用前须知`
 
 ```shell
 $ node app.js
@@ -42,6 +41,50 @@ windows 下使用 git-bash 或者 cmder 等终端执行以下命令:
 
 ```shell
 $ set PORT=4000 && node app.js
+```
+
+## 演示
+```shell
+ubuntu@Laptopcl:~/neteasemmusicapi/NeteaseCloudMusicApi$ nvm -v
+0.40.3
+ubuntu@Laptopcl:~/neteasemmusicapi/NeteaseCloudMusicApi$ node -v
+v14.21.3
+ubuntu@Laptopcl:~/neteasemmusicapi/NeteaseCloudMusicApi$ npm -v
+6.14.18
+ubuntu@Laptopcl:~/neteasemmusicapi/NeteaseCloudMusicApi$ npm install
+npm WARN read-shrinkwrap This version of npm is compatible with lockfileVersion@1, but package-lock.json was generated for lockfileVersion@2. I'll try to do my best with it!
+
+> core-js@2.6.12 postinstall /home/ubuntu/neteasemmusicapi/NeteaseCloudMusicApi/node_modules/core-js
+> node -e "try{require('./postinstall')}catch(e){}"
+
+Thank you for using core-js ( https://github.com/zloirock/core-js ) for polyfilling JavaScript standard library!
+
+The project needs your help! Please consider supporting of core-js on Open Collective or Patreon:
+> https://opencollective.com/core-js
+> https://www.patreon.com/zloirock
+
+Also, the author of core-js ( https://github.com/zloirock ) is looking for a good job -)
+
+
+> NeteaseCloudMusicApi@4.25.0 prepare /home/ubuntu/neteasemmusicapi/NeteaseCloudMusicApi
+> husky install
+
+husky - Git hooks installed
+npm WARN NeteaseCloudMusicApi@4.25.0 No repository field.
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@2.3.3 (node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@2.3.3: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+
+added 22 packages from 130 contributors and audited 564 packages in 3.355s
+
+111 packages are looking for funding
+  run `npm fund` for details
+
+found 63 vulnerabilities (19 low, 16 moderate, 26 high, 2 critical)
+  run `npm audit fix` to fix them, or `npm audit` for details
+ubuntu@Laptopcl:~/neteasemmusicapi/NeteaseCloudMusicApi$ node app
+最新版本: 4.29.0, 当前版本: 4.25.0, 请及时更新
+server running @ http://localhost:3000
+
 ```
 
 ## Vercel 部署
